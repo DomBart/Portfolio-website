@@ -1,4 +1,3 @@
-var gear = document.getElementById("gear");
 //var withtxt = document.getElementById("with");
 var introtxt = document.getElementById("pirmas");
 var diliustarr = ["img/D_80Sletter_colored_thick.png",
@@ -87,10 +86,10 @@ function WordShuffler(holder, opt) {
         'Y', 'Z'
     ];
     this.specialCharacters = [
-        '!', '§', '$', '%',
+        '!', 'Â§', '$', '%',
         '&', '/', '(', ')',
         '=', '?', '_', '<',
-        '>', '^', '°', '*',
+        '>', '^', 'Â°', '*',
         '#', '-', ':', ';', '~'
     ]
 
