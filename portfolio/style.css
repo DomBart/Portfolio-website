@@ -1,0 +1,893 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #000000;
+}
+
+#loading {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #ebe2d6
+    url('/portfolio/img/preload_gif.gif') no-repeat center;
+    z-index: 1001;
+}
+
+body {
+    background-image: url(/portfolio/img/noise.png);
+    background-color: #ebe2d6;
+    /*background-color: #eee1d0;*/
+    animation: bckgranim 5s steps(50) infinite;
+    cursor: url("/portfolio/img/cursor.png"), auto;
+}
+
+@keyframes bckgranim {
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 100% 100%;
+    }
+}
+
+.navbar {
+    /*background-color: #ebe2d6;*/
+    background-color: #ededed;
+    /*background-color: rgba(255, 255, 255, 0.9);*/
+    position: fixed;
+    top: 0;
+    background-image: url(/portfolio/img/noise.png);
+    animation: bckgranim 5s steps(50) infinite;
+    height: 7vh;
+    width: 100vw;
+    text-align: center;
+    word-spacing: 8vw;
+    border-bottom: 10px solid black;
+    z-index: 998;
+    transition: top 0.3s;
+}
+a:hover {
+    cursor: url("/portfolio/img/point.png"), auto;
+}
+#navlink {
+    margin-top: auto;
+    margin-bottom: auto;
+    color: black;
+    font-family: 'Work Sans';
+    font-weight: bold;
+    font-size: 2.5vw;
+    line-height: 7vh;
+    top:25%;
+    margin:auto;
+    text-decoration: none;
+}
+
+.intro {
+    align-content: center;
+    justify-content: center;
+    height: 55vh;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 18vh;
+}
+
+#rectangle {
+    position:absolute;
+    top:94%;
+    left: -77%;
+    width: 75vw;
+    height: 2.3vw;
+    background: #000000;
+}
+
+#pirmas {
+    margin: 0;
+    font-size: 20vw;
+    font-family: 'Work Sans';
+    left: 12%;
+    top: 85%;
+    position: absolute;
+}
+
+#antras {
+    color: #ebe2d6;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 10px;
+    paint-order: stroke fill;
+    font-size: 20vw;
+    font-family: 'Ubuntu';
+    font-style: italic;
+    font-weight: bold;
+    position: absolute;
+    margin-left: 3%;
+    top: 21%;
+    z-index: 3;
+}
+
+    #headerph {
+        position: absolute;
+        width: 55%;
+        height: auto;
+        z-index: 1;
+    }
+
+#headerph1 {
+    top:-2%;
+    position: absolute;
+    width: 55%;
+    height: auto;
+    z-index: 3;
+    animation: flash 8s infinite;
+}
+
+    #headerph2 {
+        position: absolute;
+        width: 55%;
+        height: auto;
+        z-index: 2;
+        animation: flash 8s infinite;
+    }
+#headerph3 {
+    position: absolute;
+    right: 49.8vw;
+    width: 50vw;
+    height: auto;
+    z-index: 1;
+}
+
+    @keyframes flash {
+        0%, 20% {
+            opacity: 0;
+        }
+
+        21% {
+            opacity: 1;
+        }
+
+        22% {
+            opacity: 0;
+        }
+
+        23% {
+            opacity: 1;
+        }
+
+        24% {
+            opacity: 0;
+        }
+
+        25% {
+            opacity: 1;
+        }
+
+        26% {
+            opacity: 0;
+        }
+
+        27% {
+            opacity: 1;
+        }
+
+        28% {
+            opacity: 0;
+        }
+
+        29%, 70% {
+            opacity: 1;
+        }
+
+        75%, 100% {
+            opacity: 0;
+        }
+    }
+
+@keyframes flashexpl {
+    0%, 20% {
+        opacity: 0;
+    }
+    40%, 60% {
+        opacity: 1;
+    }
+
+    70%, 100% {
+        opacity: 0;
+    }
+}
+
+.container {
+    background-image: url(/portfolio/img/noise.png);
+    background-color: #232323;
+    animation: bckgranim 5s steps(50) infinite;
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+    position: relative;
+    height: 41.8vw;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.connector1 {
+    height: 55vw;
+    position: relative;
+    overflow: hidden;
+}
+
+#gradientoverlay{
+    opacity: 0.7;
+    top:-80vw;
+    left: 27.5%;
+    position: absolute;
+    height: auto;
+    width: 45vw;
+}
+
+#trecias {
+    margin-top: 4%;
+    position: absolute;
+    left: -25%;
+    font-size: 20vw;
+    text-align: center;
+    height: 30vw;
+    font-family: 'Work Sans', 'SemiBold';
+    z-index: 2;
+}
+
+#from {
+    position: absolute;
+    font-size: 20vw;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    top: 30vw;
+    margin-top: -4vw;
+    right: -15%;
+    font-style: italic;
+    text-align: right;
+    z-index:2;
+}
+
+.container2 {
+    background-image: url("/portfolio/img/millimiter2.png");
+    background-color: rgba(255, 255, 255, 0.2);
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 53vw;
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+}
+
+#dilustr {
+  margin-top: 2%;
+  width: 33%;
+  height: auto;
+  margin-left: -1%;
+}
+
+#esign {
+    font-size: 26.5vw;
+    font-family: "Roboto";
+    color: transparent;
+    position: absolute;
+    -webkit-text-stroke: 10px black;
+    margin-top: 5%;
+    left: 34%;
+}
+
+.connector2 {
+    background-image: url(/portfolio/img/noise.png);
+    background-color: #6C92BF;
+    animation: bckgranim 5s steps(50) infinite;
+    position: relative;
+    text-align: center;
+    height: 30vw;
+    border-bottom: 10px solid black;
+    overflow: hidden;
+}
+
+#to {
+    color: #E4E4E4;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 10px;
+    position: absolute;
+    top: -65%;
+    display: inline;
+    font-size: 30vw;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    line-height: 0.9;
+    z-index: 4;
+    left: -30%;
+    word-spacing: -5vw;
+    transform: rotate(30deg);
+}
+
+.container3 {
+    position: relative;
+    height: 100vh;
+    width: auto;
+    color: white;
+    overflow: hidden;
+}
+
+#codetextblock{
+    position: absolute;
+    right:0;
+    width: 55%;
+    height: 100%;
+}
+
+#codetextblock1 {
+    position: absolute;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    border-right: 10px solid black;
+    z-index: 2;
+}
+
+#bracketblock1 {
+    display: table;
+    background-color: rgba(0, 197, 197,0.6);
+    text-align: center;
+    position: absolute;
+    top: 0;
+    width: 100.5%;
+    height: 20%;
+    border-bottom: 10px solid black;
+}
+
+#bracketblock2 {
+    display: table;
+    background-color: rgba(0, 197, 197,0.6);
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100.5%;
+    height: 20%;
+    border-top: 10px solid black;
+}
+
+.codebracket {
+    display: table-cell;
+    vertical-align: middle;
+    font-family: Ubuntu;
+    font-weight: bold;
+    color: black;
+    font-size: 5.5vw;
+}
+.codebracket::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: calc((1 - 1.25) * 0.5em);
+}
+
+#developerblock {
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    height: 60%;
+}
+
+#developertxt {
+    padding-top:45%;
+    margin:auto;
+    writing-mode: vertical-rl;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-weight:400;
+    font-size: 14vh;
+    color: black;
+}
+
+#codetextblock2 {
+    position: absolute;
+    left: 15%;
+    width: 60%;
+    height: 100%;
+}
+
+#devblock1 {
+    display: table;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    width: 100.5%;
+    height: 20%;
+    z-index: 2;
+}
+
+#devblock2 {
+    display: table;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    z-index: 2;
+}
+
+#codecentralblock {
+    display:inline-table;
+    position: absolute;
+    background-image: url(/portfolio/img/noise.png);
+    background-color: #6C92BF;
+    animation: bckgranim 5s steps(50) infinite;
+    top: 18.5%;
+    width: 100.5%;
+    height: 63%;
+    z-index:1;
+    border-bottom: 10px solid black;
+    border-top: 10px solid black;
+}
+
+#codewrap {
+    overflow:hidden;
+    display: grid;
+    align-items: center;
+    height: 100%;
+    width: 105%;
+    overflow: hidden;
+    text-align: center;
+}
+
+#CO {
+    overflow: hidden;
+    margin-top: -3%;
+    opacity:0;
+    font-size: 30vh;
+    font-family: 'Work Sans';
+    color: black;
+    letter-spacing: 2vw;
+    font-weight: 700;
+    line-height: 1;
+}
+
+#DE {
+    overflow: hidden;
+    opacity:0;
+    font-size: 30vh;
+    font-family: 'Work Sans';
+    color: black;
+    letter-spacing: 2vw;
+    margin-top:-10%;
+    font-weight: 700;
+    line-height: 0.9;
+}
+
+.centraltxt::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    /*margin-bottom: calc((1 - 1.25) * 0.5em);*/
+}
+
+#codetextblock3 {
+    position: absolute;
+    left: 75%;
+    width: 25%;
+    height: 100%;
+    border-left: 10px solid black;
+    z-index: 2;
+}
+
+#frontendtxt {
+    padding-top: 16%;
+    margin: auto;
+    writing-mode: vertical-rl;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14vh;
+    color: black;
+}
+
+#dev1 {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 8vw;
+    font-family: 'Work Sans';
+    color: black;
+    line-height:1;
+    font-weight: 400;
+}
+
+#dev1::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+}
+
+#coderimg {
+    position: absolute;
+    top: 0;
+    float: left;
+    width: 45%;
+    height: 100%;
+    z-index: 1;
+}
+
+#coderimgfront {
+    top: 0;
+    position: absolute;
+    float: left;
+    width: 45%;
+    height: 100%;
+    z-index: 3;
+}
+
+#coderimgoverlay {
+    top:-1%;
+    position: absolute;
+    float: left;
+    width: 45%;
+    height: 100%;
+    z-index: 2;
+}
+
+#coderblock {
+    position: absolute;
+    width: 100vw;
+    height: 82%;
+    border-bottom: 10px solid black;
+    overflow: hidden;
+    z-index: 3;
+}
+
+#codestrip {
+    background-image: url(/portfolio/img/noise.png);
+    animation: bckgranim 5s steps(50) infinite;
+    position: absolute;
+    text-align:left;
+    background-color: #E4E4E4;
+    bottom: 0;
+    width: 100vw;
+    height: 18%;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+#codelang {
+    position: absolute;
+    left: 0;
+    height: 95%;
+    color: black;
+    font-size: 8vw;
+    font-family: 'Work Sans';
+}
+.marquee0 {
+    right: -1%;
+    margin-top: auto;
+    margin-bottom: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    color: black;
+    font-size: 8vw;
+    font-family: 'Work Sans';
+    font-weight: 700;
+    animation: marquee 20s linear infinite;
+}
+
+.marquee {
+    margin-left: -70%;
+    margin-top: auto;
+    margin-bottom: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    color: black;
+    font-size: 8vw;
+    font-family: 'Work Sans';
+    font-weight: 700;
+}
+
+    .marquee span {
+        display: inline-block;
+        padding-left: 100%;
+        animation: marquee 40s linear infinite;
+    }
+
+.marquee2 span {
+    animation-delay: 20s;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+.blacksection {
+    background: url(/portfolio/img/noise.png);
+    position: absolute;
+    left: -100vw;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #ededed;
+    border-right: 10px solid black;
+    animation: bckgranim 5s steps(50) infinite;
+    z-index: 4;
+}
+
+#with {
+    margin-top: 2%;
+    font-size: 20vw;
+    font-family: 'Work Sans';
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+.wordcarusel {
+    overflow: hidden;
+    position: relative;
+    height: 25vw;
+    padding-top: 20px;
+    margin-top: -20px;
+}
+
+li {
+    -webkit-text-fill-color: #ededed;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 10px;
+    paint-order: stroke fill;
+    font-size: 15vw;
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-style: italic;
+    padding: 0 10px;
+    height: 20vw;
+    margin-bottom: 20vw;
+    display: block;
+}
+
+.flip4 {
+    animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
+@keyframes flip4 {
+    0% {
+        margin-top: -160vw;
+    }
+
+    5% {
+        margin-top: -120vw;
+    }
+
+    25% {
+        margin-top: -120vw;
+    }
+
+    30% {
+        margin-top: -80vw;
+    }
+
+    50% {
+        margin-top: -80vw;
+    }
+
+    55% {
+        margin-top: -40vw;
+    }
+
+    75% {
+        margin-top: -40vw;
+    }
+
+    80% {
+        margin-top: 0px;
+    }
+
+    99.99% {
+        margin-top: 0px;
+    }
+
+    100% {
+        margin-top: -160vw;
+    }
+}
+
+.container4 {
+    position: relative;
+    height: 100vh;
+    width: auto;
+    overflow: hidden;
+}
+
+.about {
+    background: url(/portfolio/img/noise.png);
+    position: absolute;
+    left: 0;
+    text-align: center;
+    height: 100%;
+    width: 50%;
+    background-color: #ededed;
+    animation: bckgranim 5s steps(50) infinite;
+}
+
+#abouthello{
+    margin-top:10vh;
+}
+#aboutfirst{
+    margin-top:3vh;
+}
+#aboutsecond{
+    margin-top:5vh;
+}
+
+.abouttxt {
+    margin-left:5vw;
+    font-size: 3vw;
+    font-family: 'Work Sans';
+    font-weight: bold;
+    text-align:left;
+}
+
+#resumebtn{
+    margin-top: 8vh;
+}
+
+.contact {
+    background: url(/portfolio/img/noise.png);
+    position: absolute;
+    right: 0;
+    text-align: center;
+    height: 100%;
+    width: 50%;
+    background-color: #ededed;
+    animation: bckgranim 5s steps(50) infinite;
+}
+
+form {
+    text-align: center;
+}
+
+#contacttitle {
+    margin-top: 6vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 5vw;
+    font-family: 'Ubuntu';
+    font-style: italic;
+    font-weight: bold;
+    border: solid 10px black;
+    border-bottom: none;
+    width: 650px;
+}
+
+#contacttitle:hover {
+    background-color: white;
+}
+
+input[type=text] {
+    box-sizing: border-box;
+    display: block;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    padding:2px;
+    font-size: 3vw;
+    font-family: 'Work Sans';
+    font-weight: bold;
+    width: 670px;
+    text-align: center;
+    border: solid 10px black;
+    border-bottom: none;
+    outline: none;
+}
+
+    input[type=text]:hover{
+        background-color: white;
+    }
+
+textarea {
+    display: block;
+    resize: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+    font-size: 3vw;
+    background-color: transparent;
+    font-family: 'Work Sans';
+    font-weight: bold;
+    text-align: center;
+    border: solid 10px black;
+    width: 646px;
+    height: 30vh;
+    outline: none;
+}
+
+textarea:hover{
+    background-color: white;
+}
+
+button[type=submit] {
+    display: block;
+    background-color: transparent;
+    margin-top: 4vh;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 5vw;
+    font-family: 'Ubuntu';
+    font-style: italic;
+    padding-right: 35px;
+    padding-left: 30px;
+    border: solid 10px black;
+}
+
+    button[type=submit]:hover {
+        background-color: #ffffff;
+        cursor: url("/portfolio/img/point.png"), auto;
+    }
+
+textarea::placeholder {
+    text-align: center;
+}
+
+@media (max-width:900px) {
+    #antras {
+            -webkit-text-stroke-width: 4px;
+        }
+
+        #esign {
+            -webkit-text-stroke-width: 4px;
+        }
+
+        .navbar {
+            bottom: 0;
+        }
+
+        .container3 {
+            height: 30vh;
+        }
+    }
+    /*@media (min-width:1000px) {
+    .container3 {
+        height: 100vh;
+    }
+    #antras {
+        -webkit-text-stroke-width: 10px;
+    }
+
+    #esign {
+        -webkit-text-stroke-width: 10px;
+    }
+}
+@media (min-width:1500px) {
+    #codelang{
+        margin-top:-1vh;
+    }
+}*/
