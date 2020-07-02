@@ -418,6 +418,7 @@ a:hover {
     top: 0;
     width: 100.5%;
     height: 20%;
+    border-bottom: 10px solid black;
     z-index: 2;
 }
 
@@ -428,21 +429,19 @@ a:hover {
     bottom: 0;
     width: 100%;
     height: 20%;
+    border-top: 10px solid black;
     z-index: 2;
 }
 
 #codecentralblock {
-    display:inline-table;
     position: absolute;
     background-image: url(/portfolio/img/noise.png);
     background-color: #6C92BF;
     animation: bckgranim 5s steps(50) infinite;
-    top: 18.5%;
+    top: 19.5%;
     width: 100.5%;
-    height: 63%;
+    height: 61%;
     z-index:1;
-    border-bottom: 10px solid black;
-    border-top: 10px solid black;
 }
 
 #codewrap {
@@ -510,18 +509,11 @@ a:hover {
 #dev1 {
     display: table-cell;
     vertical-align: middle;
-    font-size: 8vw;
+    font-size: 7vw;
     font-family: 'Work Sans';
     color: black;
     line-height:1;
     font-weight: 400;
-}
-
-#dev1::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
 }
 
 #coderimg {
