@@ -218,6 +218,10 @@ function WordShuffler(holder, opt) {
     update(time);
 }
 
+function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+};
+
 //---------------------------------------------------------------------------------------
 
 function switchHover() {
@@ -350,6 +354,8 @@ const scene2 = new ScrollMagic.Scene({
     })
     .addTo(controller2);
 
+if (isMobileDevice() === false) {
+
 const tween3 = new TimelineLite();
 
 tween3.add(
@@ -369,7 +375,8 @@ const scene3 = new ScrollMagic.Scene({
     .setTween(tween3)
     .setPin(".container3")
     .addTo(controller3);
-
+  
+}
 const tween4 = new TimelineLite();
 
 tween4.add(
