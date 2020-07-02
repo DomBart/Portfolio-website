@@ -60,7 +60,7 @@ body {
     height: 7vh;
     width: 100vw;
     text-align: center;
-    word-spacing: 8vw;
+    word-spacing: 12vw; /*changed*/
     border-bottom: 10px solid black;
     z-index: 998;
     transition: top 0.3s;
@@ -74,25 +74,26 @@ a:hover {
     color: black;
     font-family: 'Work Sans';
     font-weight: bold;
-    font-size: 2.5vw;
+    font-size: 5vw; /*changed*/
     line-height: 7vh;
-    top:25%;
-    margin:auto;
+    top: 25%;
+    margin: auto;
     text-decoration: none;
 }
 
 .intro {
     align-content: center;
     justify-content: center;
-    height: 55vh;
+    height: 16vh; /*changed*/
     position: relative;
     overflow: hidden;
-    margin-bottom: 18vh;
+    margin-top: 6vh; /*changed*/
+    margin-bottom: 6vh; /*changed*/
 }
 
 #rectangle {
-    position:absolute;
-    top:94%;
+    position: absolute;
+    top: 96%; /*changed*/
     left: -77%;
     width: 75vw;
     height: 2.3vw;
@@ -104,14 +105,14 @@ a:hover {
     font-size: 20vw;
     font-family: 'Work Sans';
     left: 12%;
-    top: 85%;
+    top: 89%; /*changed*/
     position: absolute;
 }
 
 #antras {
     color: #ebe2d6;
     -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 10px;
+    -webkit-text-stroke-width: 6px;
     paint-order: stroke fill;
     font-size: 20vw;
     font-family: 'Ubuntu';
@@ -288,7 +289,7 @@ a:hover {
     font-family: "Roboto";
     color: transparent;
     position: absolute;
-    -webkit-text-stroke: 10px black;
+    -webkit-text-stroke: 6px black; /*changed*/
     margin-top: 5%;
     left: 34%;
 }
@@ -325,16 +326,16 @@ a:hover {
 
 .container3 {
     position: relative;
-    height: 100vh;
+    height: 45vh; /*changed*/
     width: auto;
     color: white;
     overflow: hidden;
 }
 
-#codetextblock{
+#codetextblock {
     position: absolute;
-    right:0;
-    width: 55%;
+    right: 0;
+    width: 100%; /*changed*/
     height: 100%;
 }
 
@@ -342,7 +343,7 @@ a:hover {
     position: absolute;
     left: 0;
     width: 15%;
-    height: 100%;
+    height: 90%; /*changed*/
     border-right: 10px solid black;
     z-index: 2;
 }
@@ -375,7 +376,7 @@ a:hover {
     font-family: Ubuntu;
     font-weight: bold;
     color: black;
-    font-size: 5.5vw;
+    font-size: 7.5vw; /*changed*/
 }
 .codebracket::before {
     content: '';
@@ -394,13 +395,13 @@ a:hover {
 }
 
 #developertxt {
-    padding-top:45%;
-    margin:auto;
+    padding-top: 60%; /*changed*/
+    margin: auto;
     writing-mode: vertical-rl;
     text-transform: uppercase;
     font-family: Roboto;
-    font-weight:400;
-    font-size: 14vh;
+    font-weight: 400;
+    font-size: 6vh; /*changed*/
     color: black;
 }
 
@@ -408,7 +409,7 @@ a:hover {
     position: absolute;
     left: 15%;
     width: 60%;
-    height: 100%;
+    height: 90%; /*changed*/
 }
 
 #devblock1 {
@@ -418,7 +419,6 @@ a:hover {
     top: 0;
     width: 100.5%;
     height: 20%;
-    border-bottom: 10px solid black;
     z-index: 2;
 }
 
@@ -429,7 +429,6 @@ a:hover {
     bottom: 0;
     width: 100%;
     height: 20%;
-    border-top: 10px solid black;
     z-index: 2;
 }
 
@@ -438,10 +437,12 @@ a:hover {
     background-image: url(/portfolio/img/noise.png);
     background-color: #6C92BF;
     animation: bckgranim 5s steps(50) infinite;
-    top: 19.5%;
+    top: 18.5%;
     width: 100.5%;
-    height: 61%;
+    height: 60%;
     z-index:1;
+    border-bottom: 10px solid black;
+    border-top: 10px solid black;
 }
 
 #codewrap {
@@ -457,8 +458,8 @@ a:hover {
 #CO {
     overflow: hidden;
     margin-top: -3%;
-    opacity:0;
-    font-size: 30vh;
+    opacity: 0;
+    font-size: 15vh; /*changed*/
     font-family: 'Work Sans';
     color: black;
     letter-spacing: 2vw;
@@ -468,12 +469,12 @@ a:hover {
 
 #DE {
     overflow: hidden;
-    opacity:0;
-    font-size: 30vh;
+    opacity: 0;
+    font-size: 15vh; /*changed*/
     font-family: 'Work Sans';
     color: black;
     letter-spacing: 2vw;
-    margin-top:-10%;
+    margin-top: -10%;
     font-weight: 700;
     line-height: 0.9;
 }
@@ -490,33 +491,41 @@ a:hover {
     position: absolute;
     left: 75%;
     width: 25%;
-    height: 100%;
+    height: 90%; /*changed*/
     border-left: 10px solid black;
     z-index: 2;
 }
 
 #frontendtxt {
-    padding-top: 16%;
+    padding-top: 15%;
     margin: auto;
     writing-mode: vertical-rl;
     text-transform: uppercase;
     font-family: Roboto;
     font-weight: 400;
-    font-size: 14vh;
+    font-size: 7vh; /*changed*/
     color: black;
 }
 
 #dev1 {
     display: table-cell;
     vertical-align: middle;
-    font-size: 7vw;
+    font-size: 7vh; /*changed*/
     font-family: 'Work Sans';
     color: black;
-    line-height:1;
+    line-height: 1;
     font-weight: 400;
 }
 
+#dev1::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+}
+
 #coderimg {
+    display: none; /*changed*/
     position: absolute;
     top: 0;
     float: left;
@@ -526,6 +535,7 @@ a:hover {
 }
 
 #coderimgfront {
+    display: none; /*changed*/
     top: 0;
     position: absolute;
     float: left;
@@ -535,7 +545,8 @@ a:hover {
 }
 
 #coderimgoverlay {
-    top:-1%;
+    display: none; /*changed*/
+    top: -1%;
     position: absolute;
     float: left;
     width: 45%;
@@ -546,7 +557,7 @@ a:hover {
 #coderblock {
     position: absolute;
     width: 100vw;
-    height: 82%;
+    height: 100%;
     border-bottom: 10px solid black;
     overflow: hidden;
     z-index: 3;
@@ -556,24 +567,19 @@ a:hover {
     background-image: url(/portfolio/img/noise.png);
     animation: bckgranim 5s steps(50) infinite;
     position: absolute;
-    text-align:left;
-    background-color: #E4E4E4;
+    text-align: left;
+    background-color: #6C92BF; /*changed*/
+    color: black;
     bottom: 0;
     width: 100vw;
-    height: 18%;
+    height: 10%;
     overflow: hidden;
     white-space: nowrap;
-    z-index: 2;
+    border-top: 10px solid black; /*changed*/
+    border-bottom: 10px solid black; /*changed*/
+    z-index: 3; /*changed*/
 }
 
-#codelang {
-    position: absolute;
-    left: 0;
-    height: 95%;
-    color: black;
-    font-size: 8vw;
-    font-family: 'Work Sans';
-}
 .marquee0 {
     right: -1%;
     margin-top: auto;
@@ -581,7 +587,6 @@ a:hover {
     white-space: nowrap;
     overflow: hidden;
     position: absolute;
-    color: black;
     font-size: 8vw;
     font-family: 'Work Sans';
     font-weight: 700;
@@ -595,7 +600,6 @@ a:hover {
     white-space: nowrap;
     overflow: hidden;
     position: absolute;
-    color: black;
     font-size: 8vw;
     font-family: 'Work Sans';
     font-weight: 700;
@@ -622,6 +626,7 @@ a:hover {
 }
 
 .blacksection {
+    display: none; /*changed*/
     background: url(/portfolio/img/noise.png);
     position: absolute;
     left: -100vw;
@@ -719,45 +724,49 @@ li {
 }
 
 .about {
+    top: 0; /*changed*/
     background: url(/portfolio/img/noise.png);
     position: absolute;
     left: 0;
     text-align: center;
-    height: 100%;
-    width: 50%;
+    height: 45%; /*changed*/
+    width: 100%; /*changed*/
     background-color: #ededed;
     animation: bckgranim 5s steps(50) infinite;
 }
 
-#abouthello{
-    margin-top:10vh;
+#abouthello {
+    margin-top: 7vh; /*changed*/
 }
-#aboutfirst{
-    margin-top:3vh;
+#aboutfirst {
+    margin-top: 1vh; /*changed*/
 }
-#aboutsecond{
-    margin-top:5vh;
+#aboutsecond {
+    margin-top: 3vh; /*changed*/
 }
 
 .abouttxt {
-    margin-left:5vw;
-    font-size: 3vw;
+    width: 75%; /*changed*/
+    margin-left: auto; /*changed*/
+    margin-right: auto; /*changed*/
+    font-size: 5vw; /*changed*/
     font-family: 'Work Sans';
     font-weight: bold;
-    text-align:left;
+    text-align: left;
 }
 
 #resumebtn{
-    margin-top: 8vh;
+    margin-top: 4vh;
 }
 
 .contact {
+    bottom: 0; /*changed*/
     background: url(/portfolio/img/noise.png);
     position: absolute;
     right: 0;
     text-align: center;
-    height: 100%;
-    width: 50%;
+    height: 55%; /*changed*/
+    width: 100%; /*changed*/
     background-color: #ededed;
     animation: bckgranim 5s steps(50) infinite;
 }
@@ -767,11 +776,11 @@ form {
 }
 
 #contacttitle {
-    margin-top: 6vh;
+    margin-top: 0vh; /*changed*/
     display: block;
     margin-left: auto;
     margin-right: auto;
-    font-size: 5vw;
+    font-size: 6vw; /*changed*/
     font-family: 'Ubuntu';
     font-style: italic;
     font-weight: bold;
@@ -790,8 +799,8 @@ input[type=text] {
     background-color: transparent;
     margin-left: auto;
     margin-right: auto;
-    padding:2px;
-    font-size: 3vw;
+    padding: 2px;
+    font-size: 5vw; /*changed*/
     font-family: 'Work Sans';
     font-weight: bold;
     width: 670px;
@@ -811,7 +820,7 @@ textarea {
     margin-left: auto;
     margin-right: auto;
     padding: 2px;
-    font-size: 3vw;
+    font-size: 5vw; /*changed*/
     background-color: transparent;
     font-family: 'Work Sans';
     font-weight: bold;
@@ -832,7 +841,7 @@ button[type=submit] {
     margin-top: 4vh;
     margin-left: auto;
     margin-right: auto;
-    font-size: 5vw;
+    font-size: 7vw; /*changed*/
     font-family: 'Ubuntu';
     font-style: italic;
     padding-right: 35px;
@@ -849,37 +858,150 @@ textarea::placeholder {
     text-align: center;
 }
 
-@media (max-width:900px) {
-    #antras {
-            -webkit-text-stroke-width: 4px;
-        }
-
-        #esign {
-            -webkit-text-stroke-width: 4px;
-        }
-
-        .navbar {
-            bottom: 0;
-        }
-
-        .container3 {
-            height: 30vh;
-        }
+@media (min-width:1200px) {
+    .navbar {
+        word-spacing: 8vw;
     }
-    /*@media (min-width:1000px) {
-    .container3 {
-        height: 100vh;
+
+    #navlink {
+        font-size: 2.5vw;
     }
+
+    .intro {
+        height: 55vh;
+        margin-top: 0vh;
+        margin-bottom: 18vh;
+    }
+
+    #rectangle {
+        top: 94%;
+    }
+
+    #pirmas {
+        top: 85%
+    }
+
     #antras {
-        -webkit-text-stroke-width: 10px;
+        -webkit-text-stroke: 10px black;
     }
 
     #esign {
-        -webkit-text-stroke-width: 10px;
+        -webkit-text-stroke: 10px black;
+    }
+
+    .container3 {
+        height: 100vh;
+    }
+
+    #codetextblock {
+        width: 55%;
+    }
+
+    #codetextblock1 {
+        height: 100%;
+    }
+
+    .blacksection {
+        display: block;
+    }
+
+    .codebracket {
+        font-size: 5.5vw;
+    }
+
+    #developertxt {
+        padding-top: 45%;
+        font-size: 14vh;
+    }
+
+    #codetextblock2 {
+        height: 100%;
+    }
+
+    #CO {
+        font-size: 30vh;
+    }
+
+    #DE {
+        font-size: 30vh;
+    }
+
+    #codetextblock3 {
+        height: 100%;
+    }
+
+    #frontendtxt {
+        font-size: 14vh;
+    }
+
+    #dev1 {
+        font-size: 7vw;
+    }
+
+    #coderimg {
+        display: block;
+    }
+
+    #coderimgfront {
+        display: block;
+    }
+
+    #coderimgoverlay {
+        display: block;
+    }
+
+    #coderblock {
+        height: 82%;
+    }
+
+    #codestrip {
+        background-color: #ededed;
+        border: 0px;
+        height: 18%;
+        z-index: 2;
+    }
+
+    .about {
+        height: 100%;
+        width: 50%;
+    }
+
+    #abouthello {
+        margin-top: 10vh;
+    }
+
+    #aboutfirst {
+        margin-top: 3vh;
+    }
+
+    #aboutsecond {
+        margin-top: 5vh;
+    }
+
+    .abouttxt {
+        width: 90%;
+        margin-left: 4vw;
+        font-size: 3vw;
+    }
+
+    #resumebtn{
+        margin-top: 8vh;
+    }
+    .contact{
+        height: 100%;
+        width: 50%;
+    }
+    #contacttitle{
+        margin-top: 6vh;
+        font-size: 5vw;
+    }
+    input[type=text] {
+        font-size: 3vw;
+    }
+    textarea{
+        font-size: 3vw;
+    }
+    button[type=submit]{
+        font-size: 5vw;
     }
 }
-@media (min-width:1500px) {
-    #codelang{
-        margin-top:-1vh;
-    }
-}*/
