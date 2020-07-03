@@ -28,16 +28,16 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     height: 100vh;
     background: #ebe2d6
-    url('/portfolio/img/preload_gif.gif') no-repeat center;
+    url('/portfoliofin/img/preload_gif.gif') no-repeat center;
     z-index: 1001;
 }
 
 body {
-    background-image: url(/portfolio/img/noise.png);
+    background-image: url(/portfoliofin/img/noise.png);
     background-color: #ebe2d6;
     /*background-color: #eee1d0;*/
     animation: bckgranim 5s steps(50) infinite;
-    cursor: url("/portfolio/img/cursor.png"), auto;
+    cursor: url("/portfoliofin/img/cursor.png"), auto;
 }
 
 @keyframes bckgranim {
@@ -55,7 +55,7 @@ body {
     /*background-color: rgba(255, 255, 255, 0.9);*/
     position: fixed;
     top: 0;
-    background-image: url(/portfolio/img/noise.png);
+    background-image: url(/portfoliofin/img/noise.png);
     animation: bckgranim 5s steps(50) infinite;
     height: 7vh;
     width: 100vw;
@@ -66,7 +66,7 @@ body {
     transition: top 0.3s;
 }
 a:hover {
-    cursor: url("/portfolio/img/point.png"), auto;
+    cursor: url("/portfoliofin/img/point.png"), auto;
 }
 #navlink {
     margin-top: auto;
@@ -215,7 +215,7 @@ a:hover {
 }
 
 .container {
-    background-image: url(/portfolio/img/noise.png);
+    background-image: url(/portfoliofin/img/noise.png);
     background-color: #232323;
     animation: bckgranim 5s steps(50) infinite;
     border-top: 10px solid black;
@@ -267,7 +267,7 @@ a:hover {
 }
 
 .container2 {
-    background-image: url("/portfolio/img/millimiter2.png");
+    background: url("/portfoliofin/img/millimiter2.png");
     background-color: rgba(255, 255, 255, 0.2);
     position: relative;
     text-align: center;
@@ -295,7 +295,7 @@ a:hover {
 }
 
 .connector2 {
-    background-image: url(/portfolio/img/noise.png);
+    background-image: url(/portfoliofin/img/noise.png);
     background-color: #6C92BF;
     animation: bckgranim 5s steps(50) infinite;
     position: relative;
@@ -434,7 +434,7 @@ a:hover {
 
 #codecentralblock {
     position: absolute;
-    background-image: url(/portfolio/img/noise.png);
+    background-image: url(/portfoliofin/img/noise.png);
     background-color: #6C92BF;
     animation: bckgranim 5s steps(50) infinite;
     top: 18.5%;
@@ -510,7 +510,7 @@ a:hover {
 #dev1 {
     display: table-cell;
     vertical-align: middle;
-    font-size: 7vh; /*changed*/
+    font-size: 6vh; /*changed*/
     font-family: 'Work Sans';
     color: black;
     line-height: 1;
@@ -564,7 +564,7 @@ a:hover {
 }
 
 #codestrip {
-    background-image: url(/portfolio/img/noise.png);
+    background-image: url(/portfoliofin/img/noise.png);
     animation: bckgranim 5s steps(50) infinite;
     position: absolute;
     text-align: left;
@@ -627,7 +627,7 @@ a:hover {
 
 .blacksection {
     display: none; /*changed*/
-    background: url(/portfolio/img/noise.png);
+    background: url(/portfoliofin/img/noise.png);
     position: absolute;
     left: -100vw;
     text-align: center;
@@ -725,7 +725,7 @@ li {
 
 .about {
     top: 0; /*changed*/
-    background: url(/portfolio/img/noise.png);
+    background: url(/portfoliofin/img/noise.png);
     position: absolute;
     left: 0;
     text-align: center;
@@ -761,7 +761,7 @@ li {
 
 .contact {
     bottom: 0; /*changed*/
-    background: url(/portfolio/img/noise.png);
+    background: url(/portfoliofin/img/noise.png);
     position: absolute;
     right: 0;
     text-align: center;
@@ -851,7 +851,7 @@ button[type=submit] {
 
     button[type=submit]:hover {
         background-color: #ffffff;
-        cursor: url("/portfolio/img/point.png"), auto;
+        cursor: url("/portfoliofin/img/point.png"), auto;
     }
 
 textarea::placeholder {
