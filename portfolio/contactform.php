@@ -9,6 +9,8 @@ $mailTo = "dom@work.lt"; //mano pasto adresas
 $headers = "From: ".$mailFrom;
 $txt = "You have received an e-mail from ".$name.".\n\n".$message;
 mail($mailTo, $subject, $txt, $headers);
-header("Location: index.html?mailsent#contact");
+$message = "Message sent!";
+echo "<script type='text/javascript'>alert('$message');</script>";
+header("Refresh:0.5; url=index.html?mailsent#contact");
 }
 ?>
