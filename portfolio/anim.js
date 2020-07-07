@@ -1,3 +1,4 @@
+var gear = document.getElementById("gear");
 //var withtxt = document.getElementById("with");
 var introtxt = document.getElementById("pirmas");
 var diliustarr = ["img/D_80Sletter_colored_thick.png",
@@ -13,7 +14,6 @@ var esignindex = 0;
 var elem1 = document.getElementById("CO");
 var elem2 = document.getElementById("DE");
 
-/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
@@ -356,27 +356,28 @@ const scene2 = new ScrollMagic.Scene({
 
 if (isMobileDevice() === false) {
 
-const tween3 = new TimelineLite();
+    const tween3 = new TimelineLite();
 
-tween3.add(
-    TweenLite.to(".blacksection", 1, {
-        bezier: [{ x: (window.innerWidth), y: 0 }],
-        ease: Power3.easeInOut,
+    tween3.add(
+        TweenLite.to(".blacksection", 1, {
+            bezier: [{ x: (window.innerWidth), y: 0 }],
+            ease: Power3.easeInOut,
+        })
+    );
+
+
+    const controller3 = new ScrollMagic.Controller();
+
+    const scene3 = new ScrollMagic.Scene({
+        triggerElement: ".container3",
+        duration: 2000,
+        triggerHook: 0,
     })
-);
-
-const controller3 = new ScrollMagic.Controller();
-
-const scene3 = new ScrollMagic.Scene({
-    triggerElement: ".container3",
-    duration: 2000,
-    triggerHook: 0,
-})
-    .setTween(tween3)
-    .setPin(".container3")
-    .addTo(controller3);
-  
+        .setTween(tween3)
+        .setPin(".container3")
+        .addTo(controller3);
 }
+
 const tween4 = new TimelineLite();
 
 tween4.add(
@@ -435,7 +436,6 @@ function keistipoz() {
     TweenLite.to("#from", 1, {
         bezier: [{ x: -(window.innerWidth * 0.2), y: 0 }],
     })
-    //Ar optimalus budas updatint?
     tween2.clear(true);
     scene.removeTween(true);
     tween3.clear(true);
