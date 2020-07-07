@@ -14,7 +14,6 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> <!--Isimti pries paleidima-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>
@@ -43,9 +42,7 @@
         <img id="gradientoverlay" src="img/Color_gradient.jpg" alt="Color gradient" />
     </section>
     <div class="container2">
-        <div class="diliust">
             <img id="dilustr" align="left" src="img/D_80Sletter_colored_thick_transparent.png" onmouseover="switchHover();" alt="Illustration" />
-        </div>
         <h1 id="esign" onmouseover="colorHover();">esign</h1>
     </div>
     <div class="connector2">
@@ -128,11 +125,17 @@
             <div id="contact-frame">
                 <p id="contacttitle">LET'S WORK</p>
                 <form class="contact-form" action="contactform.php" method="post">
-                    <input type="text" name="name" placeholder="Name" />
-                    <input type="text" name="mail" placeholder="Email" />
+                    <input type="text" id="formin" name="name" placeholder="Name" required/>
+                    <input type="email" id="formin" name="mail" placeholder="Email" required/>
                     <textarea name="message" placeholder="Message"></textarea>
                     <button type="submit" name="submit">SEND</button>
                 </form>
+            </div>
+        </div>
+        <div id="ContactModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Message has been sent</p>
             </div>
         </div>
     </div>
